@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <p>My Library</p>
+    </div>
+
+    <div class="sidebar">
+      <form>
+        <fieldset class="first">
+          <legend>Add Book</legend>
+
+          <div class="text-input">
+            <label for="title">Title of the book</label>
+            <input type="text" id="title" name="title">
+          </div>
+
+          <div class="text-input">
+            <label for="author">Name of the author</label>
+            <input type="text" id="author" name="author">
+          </div>
+
+          <div class="text-input">
+            <label for="pages">Number of pages</label>
+            <input type="number" id="pages" name="pages">
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Have you read the book?</legend>
+
+          <div class="op">
+            <div>
+              <input type="radio" id="true" name="read" value="true">
+              <label for="true">Yes</label>
+            </div>
+  
+            <div>
+              <input type="radio" id="false" name="read" value="false">
+              <label for="false">No</label>
+            </div>
+          </div>
+
+        </fieldset>
+
+        <div class="add-button">
+          <button class="submit">Add</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="card-container">
+
+      <div class="card add" id="book0">
+        <div class="card-text">
+          <h1>Game of thrones</h1>
+          <p class="author-name">By J.J.R</p>
+          <p class="page-number">Pages: 367</p>
+        </div>
+        <div class="buttons">
+          <button class="read">Read</button>
+          <button class="remove">Remove</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="./script.js"></script>
+  
+</body>
+</html>
