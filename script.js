@@ -19,7 +19,7 @@ function addBookToLibrary() {
     isRead = false;
   }
   
-  let newBook = new Book(title.value, author.value, pages.value, isRead, myLibrary.length);
+  let newBook = new Book(title.value, author.value, pages.value, isRead);
   
   myLibrary.push(newBook);
 }

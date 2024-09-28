@@ -119,6 +119,10 @@ input[type="number"] {
   background-color: var(--submit);
 }
 
+.submit:hover {
+  filter: brightness(120%);
+}
+
 .card-container {
   grid-column: 2 / 3;
   grid-row:  2 / 3;
@@ -191,8 +195,16 @@ input[type="number"] {
   background-color: var(--remove);
 }
 
+.remove:hover {
+  filter: brightness(120%);
+}
+
 .read {
   background-color: var(--submit);
+}
+
+.read:hover {
+  filter: brightness(120%);
 }
 
 ::-webkit-scrollbar {
